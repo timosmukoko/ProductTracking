@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D95B520D-5FF9-452A-B4BB-09419DC196BC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProductTracking</RootNamespace>
+    <AssemblyName>ProductTracking</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName />
+    <SccLocalPath />
+    <SccAuxPath />
+    <SccProvider />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="formAllocatePreparedProduct.cs" />
+    <Compile Include="formAllocatePreparedProduct.Designer.cs" />
+    <Compile Include="formAllocatePreparedProduct1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>formAllocatePreparedProduct.resx</DependentUpon>
+    </Compile>
+    <Compile Include="formContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formContainer.Designer.cs">
+      <DependentUpon>formContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAddUser.Designer.cs">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formDeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDeleteUser.Designer.cs">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formEditUser.Designer.cs">
+      <DependentUpon>formEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formManager.Designer.cs">
+      <DependentUpon>formManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formOperator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formOperator.Designer.cs">
+      <DependentUpon>formOperator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formSales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formSales.Designer.cs">
+      <DependentUpon>formSales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formViewOrderDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formViewOrderDetails.Designer.cs">
+      <DependentUpon>formViewOrderDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formViewOrderDetails.resx">
+      <DependentUpon>formViewOrderDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram.layout">
+      <DependentUpon>formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAllocatePreparedProduct_buttonFind_Click.sequencediagram.layout">
+      <DependentUpon>formAllocatePreparedProduct_buttonFind_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAddUser_buttonCommit_Click.sequencediagram.layout">
+      <DependentUpon>formAddUser_buttonCommit_Click.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formAddUser_formAddUser.sequencediagram.layout">
+      <DependentUpon>formAddUser_formAddUser.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAllocatePreparedProduct.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>formAllocatePreparedProduct1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formContainer.resx">
+      <DependentUpon>formContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formAddUser.resx">
+      <DependentUpon>formAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formOperator_formOperator.sequencediagram.layout">
+      <DependentUpon>formOperator_formOperator.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\Program_Main.sequencediagram.layout">
+      <DependentUpon>Program_Main.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\formContainer_formContainer_Shown.sequencediagram.layout">
+      <DependentUpon>formContainer_formContainer_Shown.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDeleteUser.resx">
+      <DependentUpon>formDeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formEditUser.resx">
+      <DependentUpon>formEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formManager.resx">
+      <DependentUpon>formManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formOperator.resx">
+      <DependentUpon>formOperator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formSales.resx">
+      <DependentUpon>formSales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Sequence Diagrams\formAllocatePreparedProduct_buttonAddProduct_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAllocatePreparedProduct_buttonFind_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAddUser_buttonCommit_Click.sequencediagram" />
+    <None Include="Sequence Diagrams\formAddUser_formAddUser.sequencediagram" />
+    <None Include="Sequence Diagrams\formOperator_formOperator.sequencediagram" />
+    <None Include="Sequence Diagrams\Program_Main.sequencediagram" />
+    <None Include="Sequence Diagrams\formContainer_formContainer_Shown.sequencediagram" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\Sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water lilies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue hills4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{c6a73728-6bb9-4642-9d48-c325006c4b08}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{ca30cd78-9de2-4918-addf-61d9969b3950}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{e4fb805a-177f-49ca-9a6c-cad32a094856}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Blue hills2.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
